@@ -1,50 +1,46 @@
-# Pysploit
-A custom tool for reverse shell exploitation and handling.
+# **Pysploit**
+**A custom tool for reverse shell exploitation and handling.**
 
-## Features
-- Generate reverse shell payloads
-- Start a listener to catch shells
-- Handle multiple types of payloads (Python, PowerShell, etc.) all in one
+## **Features**
+- **Generate reverse shell payloads**
+- **Start a listener to catch shells**
+- **Handle multiple types of payloads** (Python, PowerShell, etc.) all in one
 
-## Prerequisites
+## **Prerequisites**
 - **Python 3.x** (Ensure Python is installed on your machine)
 - **Git** (for cloning the repository)
 - **Localtonet** (Optional for global port forwarding)
 
-## Installation
+## **Installation**
 
-1. **Clone the Repository**
+### 1. **Clone the Repository**
 
-   First, clone the repository to your local machine:
+First, clone the repository to your local machine:
 
-   ```bash
-   git clone https://github.com/junied20/Pysploit.git
-   cd Pysploit
-Install Python Dependencies
-
-Make sure you have Python 3.x installed on your system. If not, download it from python.org.
+```bash
+git clone https://github.com/junied20/Pysploit.git
+cd Pysploit
+```
+## **2. Install Python Dependencies**
+**Make sure you have Python 3.x installed on your system. If not, download it from python.org.*
 
 You can install the required Python packages with the following command:
-
-bash
-Copy
-Edit
+```bash
 pip install -r requirements.txt
 Note: If you don't have a requirements.txt, simply ensure Python is installed and ready to run .py files.
-
-Usage
+```
+## **Usage**
 Generate Payload
 Run the tool:
 
-bash
-Copy
-Edit
+```bash
 python pysploit.py
-Choose the type of stager you want to use:
+```
+**Choose the type of stager you want to use:**
 
-Python Reverse Shell
+**Python Reverse Shell**
 
-PowerShell Reverse Shell
+**PowerShell Reverse Shell**
 
 Enter your local IP address and port where the listener will be running.
 
@@ -52,16 +48,15 @@ Choose a filename for the payload (e.g., backdoor.ps1 or backdoor.py).
 
 The payload will be saved to the stager/ directory.
 
-Start Listener
+## **Start Listener**
 Run the listener with the following command:
 
-bash
-Copy
-Edit
+```bash
 python pysploit.py
+```
 Enter the local IP (LHOST) and port (LPORT) to listen for incoming shells.
 
-Usage with Localtonet (Global Access)
+## **Usage with Localtonet (Global Access)**
 If you want to make your reverse shell accessible globally, you can use Localtonet for port forwarding. Follow these steps:
 
 Sign Up for Localtonet:
@@ -80,8 +75,5 @@ When generating your payload, use the public IP provided by Localtonet as the LH
 
 You can now access your reverse shell from anywhere using the public IP.
 
-Disclaimer
-By using this tool, you acknowledge that Pysploit is intended for educational purposes only. You must have permission to test and deploy these tools on any target system. The creator of this tool is not liable for any misuse or illegal activity carried out using this software.
-
-Author
-Pysploit is developed by Junied Abrar.
+**Disclaimer
+By using this tool, you acknowledge that Pysploit is intended for educational purposes only. You must have permission to test and deploy these tools on any target system. The creator of this tool is not liable for any misuse or illegal activity carried out using this software.**
